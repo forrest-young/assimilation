@@ -9,8 +9,6 @@ function range(start, end, step){
     end = temp
   }
 
-  console.log(start + "->" + end)
-
   var s
   if (step == undefined || step == null){
     s = 1
@@ -22,6 +20,8 @@ function range(start, end, step){
   for (var i = 0; i <= (end - start); i+=s){
     list.push(start+i)
   }
+
+    console.log(start + "->" + end + "by " + s)
 
   return list
 }
