@@ -16,7 +16,7 @@ function range(start, end, step){
   var list = []
 
 
-  for (var i = 0; i <= (end - start); i++){
+  for (var i = 0; i <= (end - start); i+=step){
     list.push(start+i)
   }
 
