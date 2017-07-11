@@ -20,7 +20,7 @@ function range(start, end, step){
     list.push(start+i)
   }
 
-    console.log("Sum from " + start + "to" + end + " by " + s + ":")
+    console.log("Sum from " + start + " to " + end + " by " + s + ":")
 
   return list
 }
