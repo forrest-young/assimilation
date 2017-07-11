@@ -24,9 +24,9 @@ function range(start, end, step){
 }
 
 console.log(range(1,5))
-console.log(range(5,1) + "\n")
+console.log(range(5,1))
 console.log(range(1,5,2))
-console.log(range(5,1,2) + "\n")
+console.log(range(5,1,2))
 
 
 function sum(array){
@@ -40,6 +40,6 @@ function sum(array){
 }
 
 console.log(sum(range(1,5)))
-console.log(sum(range(5,1) + "\n"))
+console.log(sum(range(5,1)))
 console.log(sum(range(1,5,2)))
-console.log(sum(range(5,1,2) + "\n"))
+console.log(sum(range(5,1,2)))
