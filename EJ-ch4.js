@@ -13,6 +13,7 @@ function range(start, end, step){
   }else{
     i = step
   }
+  console.log(i)
   var list = []
 
 
