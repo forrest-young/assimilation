@@ -27,7 +27,7 @@ console.log(range(1,5))
 console.log(range(5,1))
 console.log(range(1,5,2))
 console.log(range(5,1,2))
-console.log(range(0,(6.022*10^(23)),Math.PI))
+console.log(range(0,Math.PI*10,Math.PI))
 
 
 function sum(array){
