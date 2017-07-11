@@ -8,6 +8,9 @@ function range(start, end, step){
     start = end
     end = temp
   }
+
+  console.log(start + "->" + end)
+
   var s
   if (step == undefined || step == null){
     s = 1
@@ -44,4 +47,4 @@ console.log(sum(range(1,5)))
 console.log(sum(range(5,1)))
 console.log(sum(range(1,5,2)))
 console.log(sum(range(5,1,2)))
-console.log(sum(range(0,(6.022*10^(23)),Math.PI)))
+console.log(sum(range(0,Math.PI*10,Math.PI)))
