@@ -9,9 +9,11 @@ function range(start, end, step){
   }
 
   var s
-  if (step == undefined || step == null){
+  if (step == undefined || step == null || step == 0){
     s = 1
-  }else{
+  }else if (step < 0){
+    s = -step
+  }else {
     s = step
   }
   var list = []
@@ -40,5 +42,5 @@ function sum(array){
 console.log(sum(range(1,5)))
 console.log(sum(range(5,1)))
 console.log(sum(range(1,5,2)))
-console.log(sum(range(5,1,2)))
+console.log(sum(range(5,1,-2)))
 console.log(sum(range(0,Math.PI*10,Math.PI)))
