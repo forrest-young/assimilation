@@ -18,6 +18,7 @@ function range(start, end){
 }
 
 console.log(range(1,5))
+console.log(range(5,1))
 
 function sum(array){
   var total = 0
