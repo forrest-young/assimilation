@@ -21,7 +21,7 @@ function range(start, end, step){
     list.push(start+i)
   }
 
-    console.log(start + "->" + end + "by " + s)
+    console.log(start + "->" + end + " by " + s)
 
   return list
 }
