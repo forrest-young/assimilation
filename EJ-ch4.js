@@ -8,16 +8,16 @@ function range(start, end, step){
     start = end
     end = temp
   }
+  var s
   if (step == undefined || step == null){
-    i = 1
+    s = 1
   }else{
-    i = step
+    s = step
   }
   console.log(i)
   var list = []
 
-
-  for (var i = 0; i <= (end - start); i+=step){
+  for (var i = 0; i <= (end - start); i+=s){
     list.push(start+i)
   }
 
