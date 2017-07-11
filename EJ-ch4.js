@@ -14,7 +14,6 @@ function range(start, end, step){
   }else{
     s = step
   }
-  console.log(i)
   var list = []
 
   for (var i = 0; i <= (end - start); i+=s){
@@ -28,6 +27,7 @@ console.log(range(1,5))
 console.log(range(5,1))
 console.log(range(1,5,2))
 console.log(range(5,1,2))
+console.log(range(0,(6.022*10^(23)),Math.PI)
 
 
 function sum(array){
@@ -44,3 +44,4 @@ console.log(sum(range(1,5)))
 console.log(sum(range(5,1)))
 console.log(sum(range(1,5,2)))
 console.log(sum(range(5,1,2)))
+console.log(sum(range(0,(6.022*10^(23)),Math.PI))
