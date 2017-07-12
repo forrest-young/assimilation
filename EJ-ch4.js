@@ -98,7 +98,9 @@ var myList = arrayToList([10, 20, 30])
 console.log(listToArray(myList))
 
 function listToArray(list){
-  console.log(list)
+  console.log(list.value)
+  console.log(list.rest)
   let anArray = []
-  return anArray
+
+    return anArray
 }
