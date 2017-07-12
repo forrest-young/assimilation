@@ -99,9 +99,10 @@ function listToArray(list){
 
   while(list.value != null && list.value != undefined){
     anArray.push(list.value)
+    if (list.rest == null){
+      break
+    }
     list = list.rest
-    
-    if (list.rest == null) break
   }
     return anArray
 }
