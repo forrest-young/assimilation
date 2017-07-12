@@ -101,7 +101,8 @@ function listToArray(list){
   let anArray = []
 
   do{
-    anArray.push(list.value)
+    let x = list.value
+    anArray.push(x)
 
     //If there is a link, save the list
     if (list.rest != null){
