@@ -1,5 +1,5 @@
 //The Sum of a Range
-
+/**********************************************************
 // Range function takes a start and end with
 // an optional step (default = 1) and returns
 // an array containing each number in-between.
@@ -46,5 +46,24 @@ console.log(sum(range(5,1)))
 console.log(sum(range(1,5,2)))
 console.log(sum(range(5,1,-2)))
 console.log(sum(range(0,Math.PI*10,Math.PI)))
+**********************************************************/
 
 //Reversing an array
+
+function reverseArray (array){
+  var temp
+
+  for (var i = 0; i <= Math.ceil(array.length/2); i++){
+    temp = array[i]
+    array[i] = array[(array.length-i)]
+    array[(array.length-i)] = temp
+  }
+
+  return array
+}
+
+var x = [0,1,2,3,4,5,6,7,8,9]
+var y = [9,8,7,6,5,4,3,2,1]
+
+console.log(reverseArray(x))
+console.log(reverseArray(y))
