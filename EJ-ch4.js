@@ -94,6 +94,8 @@ function arrayToList(anArray) {
 
 console.log(arrayToList([10, 20, 30]));
 
+var myList = arrayToList([10, 20, 30])
+
 function listToArray(list){
   let temp
   let anArray = []
@@ -110,4 +112,4 @@ function listToArray(list){
   return anArray
 }
 
-console.log(listToArray(arrayToList([1, 2, 3])))
+console.log(listToArray(myList))
