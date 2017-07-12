@@ -97,6 +97,7 @@ console.log(arrayToList([10, 20, 30]));
 var myList = arrayToList([10, 20, 30])
 
 function listToArray(list){
+  console.log(list)
   let temp = {}
   let anArray = []
 
