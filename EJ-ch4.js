@@ -69,5 +69,5 @@ function reverseArray (array){
 var x = [0,1,2,3,4,5,6,7,8,9]
 var y = [9,8,7,6,5,4,3,2,1]
 
-console.log(reverseArray(x))
+console.log(reverseArray(x) + "\n===========")
 console.log(reverseArray(y))
