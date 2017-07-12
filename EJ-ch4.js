@@ -49,20 +49,15 @@ console.log(sum(range(0,Math.PI*10,Math.PI)))
 **********************************************************/
 
 //Reversing an array
-/*******************************************************
+//*******************************************************
 function reverseArray (array){
   var temp
 
   for (var i = 0; i < Math.ceil(array.length/2); i++){
-      console.log(i)
     temp = array[i]
-      console.log("Temp: " + temp)
     array[i] = array[(array.length-i-1)]
-      console.log("array[i]: " + array[i])
     array[(array.length-i-1)] = temp
-      console.log(array[i] + " <-> " + array[(array.length-i-1)] + "\n")
   }
-
   return array
 }
 
@@ -72,10 +67,24 @@ var y = [9,8,7,6,5,4,3,2,1]
 console.log(reverseArray(x))
 console.log("\n====================")
 console.log(reverseArray(y))
-***********************************************************/
+console.log("\n***")
+
+function reverseArray(inputArray) {
+  let result = []
+  let counter = 0;
+  for (let i = inputArray.length-1; i >= 0; i--) {
+    result[counter++] = inputArray[i]
+  }
+  return result
+}
+
+let test = [1, 2, 3, 4, 5, 6, 7]
+console.log(test)
+console.log(reverseArray(test))
+/***********************************************************/
 
 //A list
-
+/*
 function arrayToList(array){
   var list = {
     value: null,
@@ -88,16 +97,8 @@ function arrayToList(array){
       console.log(list)
       console.log("\n" + (i+1) + " pass\n")
     }else{
-      var temp
 
-      temp = list
 
-      temp.rest = {
-        value: array[i],
-        rest: null
-      }
-
-      list.rest = temp
       console.log(list)
       console.log("\n" + (i+1) + " pass\n")
     }
@@ -109,3 +110,4 @@ function arrayToList(array){
 var x = [1, 2, 3]
 
 console.log(arrayToList(x))
+*/
