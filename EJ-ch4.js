@@ -96,7 +96,6 @@ function listToArray(list){
   console.log(list.value)
   console.log(list.rest)
   let anArray = []
-  let temp
 
   while(list.value != null && list.value != undefined){
     console.log("List value: " + list.value)
