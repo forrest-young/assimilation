@@ -79,7 +79,7 @@ console.log(reverseArray(y))
 function arrayToList(array){
   var list = {
     value: null
-    rest: undefined
+    rest: null
   }
 
   for (var i = 0; i < array.length; i++){
@@ -88,7 +88,7 @@ function arrayToList(array){
     }else{
       list.rest = {
         value: array[i]
-        rest: undefined
+        rest: null
       }
     }
   }
