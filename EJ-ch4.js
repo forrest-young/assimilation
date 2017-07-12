@@ -49,7 +49,7 @@ console.log(sum(range(0,Math.PI*10,Math.PI)))
 **********************************************************/
 
 //Reversing an array
-//*******************************************************
+/*******************************************************
 function reverseArray (array){
   var temp
 
@@ -67,47 +67,47 @@ var y = [9,8,7,6,5,4,3,2,1]
 console.log(reverseArray(x))
 console.log("\n====================")
 console.log(reverseArray(y))
-console.log("\n***")
-
-function reverseArray(inputArray) {
-  let result = []
-  let counter = 0;
-  for (let i = inputArray.length-1; i >= 0; i--) {
-    result[counter++] = inputArray[i]
-  }
-  return result
-}
-
-let test = [1, 2, 3, 4, 5, 6, 7]
-console.log(test)
-console.log(reverseArray(test))
-/***********************************************************/
+***********************************************************/
 
 //A list
-/*
-function arrayToList(array){
-  var list = {
-    value: null,
-    rest: null
+
+function prepend(element, list) {
+  let temp = {}
+
+  temp.value = element
+  temp.rest = list
+
+  return temp
+}
+
+function arrayToList(anArray) {
+  let list = {}
+
+  list.value = anArray[anArray.length-1]
+  list.rest = null
+
+  for (let i = anArray.length-2; i >= 0; i--) {
+    list = prepend(anArray[i], list)
   }
-
-  for (var i = 0; i < array.length; i++){
-    if (i == 0){
-      list.value = array[i]
-      console.log(list)
-      console.log("\n" + (i+1) + " pass\n")
-    }else{
-
-
-      console.log(list)
-      console.log("\n" + (i+1) + " pass\n")
-    }
-  }
-
   return list
 }
 
-var x = [1, 2, 3]
+console.log(arrayToList([10, 20, 30]));
 
-console.log(arrayToList(x))
-*/
+function listToArray(list){
+  let temp
+  let anArray = []
+
+
+  do{
+    anArray.push(list.value)
+    if (list.rest != null){
+      temp = list
+    }
+    list = list.rest
+  }while(temp != null)
+
+  return anArray
+}
+
+console.log(listToArray(arrayToList([1, 2, 3])))
