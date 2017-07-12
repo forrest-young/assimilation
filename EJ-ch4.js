@@ -70,6 +70,7 @@ console.log(reverseArray(y))
 ***********************************************************/
 
 // A list
+
 // Prepend function takes an element and a list
 // and links the element by adding it to the front
 // of the list
@@ -121,3 +122,14 @@ function listToArray(list){
 
 var myList = arrayToList([10, 20, 30])
 console.log(listToArray(myList))
+
+function nthElement (list, n){
+  for (let i = 0; i < n; i++){
+    list = list.rest
+  }
+  return list.value
+}
+
+console.log(nthElement(myList, 0))
+console.log(nthElement(myList, 1))
+console.log(nthElement(myList, 2))
