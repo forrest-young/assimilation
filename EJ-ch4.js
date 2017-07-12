@@ -97,6 +97,11 @@ function listToArray(list){
   console.log(list.rest)
   let anArray = []
 
+  while(list.rest != null){
+        anArray.push()
+  }
+
+
     return anArray
 }
 
