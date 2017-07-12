@@ -99,21 +99,4 @@ console.log(listToArray(myList))
 
 function listToArray(list){
   console.log(list)
-  let temp = {}
-  let anArray = []
-
-  do{
-    //Build the array
-    let x = list.value
-    anArray.push(x)
-
-    //If there is a link, save the list
-    if (list.rest != null){
-      temp = list
-    }
-    //Move along the chain
-    list = list.rest
-  }while(temp != null)
-
-  return anArray
 }
