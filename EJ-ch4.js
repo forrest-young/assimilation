@@ -53,13 +53,13 @@ console.log(sum(range(0,Math.PI*10,Math.PI)))
 function reverseArray (array){
   var temp
 
-  for (var i = 1; i < Math.ceil(array.length/2); i++){
+  for (var i = 0; i < Math.ceil(array.length/2); i++){
       console.log(i)
     temp = array[i]
       console.log("Temp: " + temp)
-    array[i] = array[(array.length-i)]
+    array[i] = array[(array.length-i-1)]
       console.log("array[i]: " + array[i])
-    array[(array.length-i)] = temp
+    array[(array.length-i-1)] = temp
       console.log(array[i] + " <-> " + array[(array.length-i)] + "\n")
   }
 
