@@ -99,4 +99,6 @@ console.log(listToArray(myList))
 
 function listToArray(list){
   console.log(list)
+  let anArray = []
+  return anArray
 }
