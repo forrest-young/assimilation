@@ -85,13 +85,15 @@ function arrayToList(array){
   for (var i = 0; i < array.length; i++){
     if (i == 0){
       list.value = array[i]
-      console.log(list + "\n" + (i+1) + " pass\n")
+      console.log(list)
+      console.log("\n" + (i+1) + " pass\n")
     }else{
       list.rest = {
         value: array[i],
         rest: null
       }
-      console.log(list + "\n" + (i+1) + " pass\n")
+      console.log(list)
+      console.log("\n" + (i+1) + " pass\n")
     }
   }
 
