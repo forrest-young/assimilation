@@ -96,12 +96,13 @@ function listToArray(list){
   console.log(list.value)
   console.log(list.rest)
   let anArray = []
+  let temp
 
-  while(list.rest != null){
-        anArray.push()
+  while(list.value != null && list.value != undefined){
+    console.log("List value: " + list.value)
+    anArray.push(list.value)
+    list = list.rest
   }
-
-
     return anArray
 }
 
