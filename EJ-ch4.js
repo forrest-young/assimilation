@@ -98,9 +98,10 @@ function listToArray(list){
   let anArray = []
 
   while(list.value != null && list.value != undefined){
-    console.log("List value: " + list.value)
     anArray.push(list.value)
     list = list.rest
+    
+    if (list.rest == null) break
   }
     return anArray
 }
