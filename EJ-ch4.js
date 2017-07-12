@@ -88,10 +88,16 @@ function arrayToList(array){
       console.log(list)
       console.log("\n" + (i+1) + " pass\n")
     }else{
-      list.rest = {
+      var temp
+
+      temp = list
+
+      temp.rest = {
         value: array[i],
         rest: null
       }
+
+      list.rest = temp
       console.log(list)
       console.log("\n" + (i+1) + " pass\n")
     }
