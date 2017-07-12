@@ -97,12 +97,13 @@ console.log(arrayToList([10, 20, 30]));
 var myList = arrayToList([10, 20, 30])
 
 function listToArray(list){
-  let temp
+  let temp = {}
   let anArray = []
-
 
   do{
     anArray.push(list.value)
+
+    //If there is a link, save the list
     if (list.rest != null){
       temp = list
     }
