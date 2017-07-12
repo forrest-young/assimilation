@@ -60,7 +60,7 @@ function reverseArray (array){
     array[i] = array[(array.length-i-1)]
       console.log("array[i]: " + array[i])
     array[(array.length-i-1)] = temp
-      console.log(array[i] + " <-> " + array[(array.length-i)] + "\n")
+      console.log(array[i] + " <-> " + array[(array.length-i-1)] + "\n")
   }
 
   return array
