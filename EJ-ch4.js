@@ -92,11 +92,6 @@ function arrayToList(anArray) {
   return list
 }
 
-console.log(arrayToList([10, 20, 30]));
-
-var myList = arrayToList([10, 20, 30])
-console.log(listToArray(myList))
-
 function listToArray(list){
   console.log(list.value)
   console.log(list.rest)
@@ -104,3 +99,6 @@ function listToArray(list){
 
     return anArray
 }
+
+var myList = arrayToList([10, 20, 30])
+console.log(listToArray(myList))
