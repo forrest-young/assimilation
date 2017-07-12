@@ -101,6 +101,7 @@ function listToArray(list){
   let anArray = []
 
   do{
+    //Build the array
     let x = list.value
     anArray.push(x)
 
@@ -108,6 +109,7 @@ function listToArray(list){
     if (list.rest != null){
       temp = list
     }
+    //Move along the chain
     list = list.rest
   }while(temp != null)
 
