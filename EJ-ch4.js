@@ -49,7 +49,7 @@ console.log(sum(range(0,Math.PI*10,Math.PI)))
 **********************************************************/
 
 //Reversing an array
-
+/*******************************************************
 function reverseArray (array){
   var temp
 
@@ -72,5 +72,30 @@ var y = [9,8,7,6,5,4,3,2,1]
 console.log(reverseArray(x))
 console.log("\n====================")
 console.log(reverseArray(y))
+***********************************************************/
 
 //A list
+
+function arrayToList(array){
+  var list = {
+    value: null
+    rest: undefined
+  }
+
+  for (var i = 0; i < array.length; i++){
+    if (i == 0){
+      list.value = array[i]
+    }else{
+      list.rest = {
+        value: array[i]
+        rest: undefined
+      }
+    }
+  }
+
+  return list
+}
+
+var x = [1, 2, 3]
+
+console.log(arrayToList(x))
