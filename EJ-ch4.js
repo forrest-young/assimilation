@@ -56,8 +56,10 @@ function reverseArray (array){
   for (var i = 0; i < Math.ceil(array.length/2); i++){
       console.log(i)
     temp = array[i]
+      console.log("Temp: " + temp)
     array[i] = array[(array.length-i)]
     array[(array.length-i)] = temp
+      console.log(array[i] + " <-> " + array[(array.length-i)])
   }
 
   return array
