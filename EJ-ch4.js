@@ -69,8 +69,10 @@ console.log("\n====================")
 console.log(reverseArray(y))
 ***********************************************************/
 
-//A list
-
+// A list
+// Prepend function takes an element and a list
+// and links the element by adding it to the front
+// of the list
 function prepend(element, list) {
   let temp = {}
 
@@ -80,28 +82,38 @@ function prepend(element, list) {
   return temp
 }
 
+// arrayToList function takes any array and creates
+// a linked list of each element in the array
 function arrayToList(anArray) {
   let list = {}
 
+  // We initialize our linked list from the
+  // terminal side
   list.value = anArray[anArray.length-1]
   list.rest = null
 
+  // Loop backwards through anArray starting with the
+  // second last element in the array
   for (let i = anArray.length-2; i >= 0; i--) {
     list = prepend(anArray[i], list)
   }
   return list
 }
 
+// listToArray function takes a linked list
+// and returns an array
 function listToArray(list){
-  console.log(list.value)
-  console.log(list.rest)
   let anArray = []
 
+  // Is list is really a list?
   while(list.value != null && list.value != undefined){
+    //If so, add the first value to our array
     anArray.push(list.value)
+    // Are we at the end of the list?
     if (list.rest == null){
       break
     }
+    // Assume next link in the list
     list = list.rest
   }
     return anArray
