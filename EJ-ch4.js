@@ -158,7 +158,7 @@ console.log(nthRecursive(myList, 2))
 console.log(nthRecursive(myList, 3))
 */
 
-//Deep Comparison
+//Deep Comparison, borrowed code
 
 function deepEqual (x, y){
   if( (typeof x == 'object' && x != null) &&
@@ -177,14 +177,12 @@ function deepEqual (x, y){
        }
        for( let key in x)
        {
-         console.log("Key in x: " + key)
          if(!(key in y) || !deepEqual(x[key],y[key])) {
            return false;
          }
        }
        for( let key in y)
        {
-         console.log("Key in y: " + key)
          if(!(key in x) || !deepEqual(y[key],x[key])) {
            return false;
          }
