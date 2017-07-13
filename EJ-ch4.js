@@ -125,13 +125,13 @@ console.log(listToArray(myList))
 
 function nthElement (list, n){
   for (let i = 0; i < n; i++){
-    list = list.rest
+    if ((list.rest == null) && ((n - i) > 0)){
+      return undefined
+    }else{
+      list = list.rest
+    }
   }
-  if (list.value == null || list.value == undefined){
-    return undefined
-  }else{
-    return list.value
-  }
+  return list.value
 }
 
 console.log(nthElement(myList, 0))
