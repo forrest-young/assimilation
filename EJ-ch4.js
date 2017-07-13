@@ -127,9 +127,14 @@ function nthElement (list, n){
   for (let i = 0; i < n; i++){
     list = list.rest
   }
-  return list.value
+  if (list.value == null || list.value == undefined){
+    return undefined
+  }else{
+    return list.value
+  }
 }
 
 console.log(nthElement(myList, 0))
 console.log(nthElement(myList, 1))
 console.log(nthElement(myList, 2))
+console.log(nthElement(myList, 3))
