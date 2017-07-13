@@ -193,14 +193,7 @@ function deepEqual (x, y){
 
 var a = {}
 var b = {}
-console.log("T, T, F, F, T, F")
-console.log(deepEqual(a,b))
-a = {1, 2, 3}
-b = {1, 2, 3}
-console.log(deepEqual(a,b))
-b = {1, 2}
-console.log(deepEqual(a,b))
-a = [1, 2]
+console.log("T, T, F")
 console.log(deepEqual(a,b))
 a = {x: 1, y: 2, z: 3}
 b = {x: 1, y: 2, z: 3}
