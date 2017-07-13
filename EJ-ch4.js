@@ -67,10 +67,10 @@ var y = [9,8,7,6,5,4,3,2,1]
 console.log(reverseArray(x))
 console.log("\n====================")
 console.log(reverseArray(y))
-***********************************************************/
+*/
 
 // A list
-
+/*
 // Prepend function takes an element and a list
 // and links the element by adding it to the front
 // of the list
@@ -156,3 +156,41 @@ console.log(nthRecursive(myList, 0))
 console.log(nthRecursive(myList, 1))
 console.log(nthRecursive(myList, 2))
 console.log(nthRecursive(myList, 3))
+*/
+
+//Deep Comparison
+
+function deepEqual (x, y){
+  if( (typeof x == 'object' && x != null) &&
+        (typeof y == 'object' && y != null) )
+    {
+       var count = [0,0];
+       for( let key in x) count[0]++;
+       for( let key in y) count[1]++;
+
+       if( count[0]-count[1] != 0) {
+         return false;
+       }
+       for( let key in x)
+       {
+         if(!(key in y) || !deepEqual(x[key],y[key])) {
+           return false;
+         }
+       }
+       for( var key in y)
+       {
+         if(!(key in x) || !deepEqual(y[key],x[key])) {
+           return false;
+         }
+       }
+       return true;
+    }
+    else
+    {
+       return x === y;
+    }
+}
+
+var a = {}
+var b = {}
+console.log(deepEqual(a,b))
