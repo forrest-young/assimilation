@@ -138,3 +138,21 @@ console.log(nthElement(myList, 0))
 console.log(nthElement(myList, 1))
 console.log(nthElement(myList, 2))
 console.log(nthElement(myList, 3))
+
+function nthRecursive (list, n){
+  let x = list.value
+
+  if (list.rest != null && n > 0){
+    x = nthRecursive(list.rest, n-1)
+    return x
+  }else if (n == 0){
+    return x
+  }else if (list.rest == null && n > 0){
+    return undefined
+  }
+}
+
+console.log(nthRecursive(myList, 0))
+console.log(nthRecursive(myList, 1))
+console.log(nthRecursive(myList, 2))
+console.log(nthRecursive(myList, 3))
