@@ -165,8 +165,12 @@ function deepEqual (x, y){
         (typeof y == 'object' && y != null) )
     {
        var count = [0,0];
-       for( let key in x) count[0]++;
-       for( let key in y) count[1]++;
+       for( let key in x){
+         count[0]++
+       }
+       for( let key in y){
+         count[1]++
+       }
 
        if( count[0]-count[1] != 0) {
          return false;
