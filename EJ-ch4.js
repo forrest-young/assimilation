@@ -120,7 +120,7 @@ function listToArray(list){
     return anArray
 }
 
-var myList = arrayToList([10, 20, 30])
+var myList = arrayToList([10, 20, 30, 40])
 console.log(listToArray(myList))
 
 function nthElement (list, n){
