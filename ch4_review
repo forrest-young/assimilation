@@ -30,7 +30,7 @@ function query (journal, type, x, y, z){
       }
     }
   }else if (type == 1){
-    let total
+    let total = 0
     for (let i = 0; i < journal.length; i++){
       if ((journal[i].month == x) && (journal[i].year == y)){
         total += journal[i].mile
