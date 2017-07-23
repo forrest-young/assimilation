@@ -1,33 +1,35 @@
 var journal = []
 
-function addEntry (idate, idest, imile, ipurp){
+function addEntry (iday, imonth, iyear, idest, imile, ipurp){
   let entry = {}
-  entry.date = idate
+  entry.day = iday
+  entry.month = imonth
+  entry.year = iyear
   entry.dest = idest
   entry.mile = imile
   entry.purp = ipurp
   return entry
 }
 
-journal.push(addEntry("July 23, 2017", "Medaryville", 20, "yard"))
-journal.push(addEntry("July 20, 2017", "Medaryville", 21, "yard"))
-journal.push(addEntry("June 15, 2017", "Medaryville", 19, "check"))
-journal.push(addEntry("June 15, 2017", "Monon", 8, "misc"))
-journal.push(addEntry("June 19, 2017", "Monon", 8, "misc"))
-journal.push(addEntry("June 5, 2017", "Monon", 9, "town"))
-journal.push(addEntry("May 28, 2017", "Medaryville", 20, "yard"))
+journal.push(addEntry(23, "July", 2017, "Medaryville", 20, "yard"))
+journal.push(addEntry(20, "July", 2017, "Medaryville", 21, "yard"))
+journal.push(addEntry(15, "June", 2017, "Medaryville", 19, "check"))
+journal.push(addEntry(15, "June", 2017, "Monon", 8, "misc"))
+journal.push(addEntry(19, "June", 2017, "Monon", 8, "misc"))
+journal.push(addEntry(5, "June", 2017, "Monon", 9, "town"))
+journal.push(addEntry(28, "May", 2017, "Medaryville", 20, "yard"))
 
 console.log(journal)
 console.log("\n")
 
-function query (journal, type, input){
+function query (journal, type, x, y, z){
   if (type == 0){
     for (let i = 0; i < journal.length; i++){
-      if (journal[i].date == input){
+      if ()(journal[i].day == x) && (journal[i].month == y) && (journal[i].year == z)){
         console.log(journal[i])
       }
     }
   }
 }
 
-query(journal, 0, "June 15, 2017")
+query(journal, 0, 15, "June", 2017)
