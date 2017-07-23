@@ -17,3 +17,15 @@ journal.push(addEntry("June 5, 2017", "Monon", "9", "town"))
 journal.push(addEntry("May 28, 2017", "Medaryville", "20", "yard"))
 
 console.log(journal)
+
+function query (journal, type, input){
+  if (type == 0){
+    for (let i = 0; i < journal.length; i++){
+      if (journal[i].date == input){
+        console.log(journal[i])
+      }
+    }
+  }
+}
+
+query(journal, 0, "June 15, 2017")
