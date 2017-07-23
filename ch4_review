@@ -9,12 +9,13 @@ function addEntry (idate, idest, imile, ipurp){
   return entry
 }
 
-journal.push(addEntry("July 23, 2017", "Medaryville", "20", "yard"))
-journal.push(addEntry("July 20, 2017", "Medaryville", "21", "yard"))
-journal.push(addEntry("June 15, 2017", "Medaryville", "19", "check"))
-journal.push(addEntry("June 19, 2017", "Monon", "8", "misc"))
-journal.push(addEntry("June 5, 2017", "Monon", "9", "town"))
-journal.push(addEntry("May 28, 2017", "Medaryville", "20", "yard"))
+journal.push(addEntry("July 23, 2017", "Medaryville", 20, "yard"))
+journal.push(addEntry("July 20, 2017", "Medaryville", 21, "yard"))
+journal.push(addEntry("June 15, 2017", "Medaryville", 19, "check"))
+journal.push(addEntry("June 15, 2017", "Monon", 8, "misc"))
+journal.push(addEntry("June 19, 2017", "Monon", 8, "misc"))
+journal.push(addEntry("June 5, 2017", "Monon", 9, "town"))
+journal.push(addEntry("May 28, 2017", "Medaryville", 20, "yard"))
 
 console.log(journal)
 
