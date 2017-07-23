@@ -29,7 +29,16 @@ function query (journal, type, x, y, z){
         console.log(journal[i])
       }
     }
+  }else if (type == 1){
+    let total
+    for (let i = 0; i < journal.length; i++){
+      if ((journal[i].month == x) && (journal[i].year == y)){
+        total += journal[i].mile
+      }
+    }
+    console.log("Miles driven in " + x + " of " + y + ": " + total)
   }
 }
 
 query(journal, 0, 15, "June", 2017)
+query(journal, 1, "July", 2017)
