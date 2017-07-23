@@ -1,0 +1,15 @@
+var journal = []
+
+function addEntry (idate, idest, imile, ipurp){
+  let entry = {
+    date: idate
+    dest: idest
+    mile: imile
+    purp: ipurp
+  }
+  return entry
+}
+
+journal.push(addEntry("July 23, 2017", "Medaryville", "20", "yard"))
+
+console.log(journal[0])
