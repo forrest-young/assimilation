@@ -25,7 +25,7 @@ console.log("\n")
 function query (journal, type, x, y, z){
   if (type == 0){
     for (let i = 0; i < journal.length; i++){
-      if ()(journal[i].day == x) && (journal[i].month == y) && (journal[i].year == z)){
+      if ((journal[i].day == x) && (journal[i].month == y) && (journal[i].year == z)){
         console.log(journal[i])
       }
     }
