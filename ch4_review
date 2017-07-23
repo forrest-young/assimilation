@@ -1,12 +1,11 @@
 var journal = []
 
 function addEntry (idate, idest, imile, ipurp){
-  let entry = {
-    date: idate
-    dest: idest
-    mile: imile
-    purp: ipurp
-  }
+  let entry = {}
+  entry.date = idate
+  entry.dest = idest
+  entry.mile = imile
+  entry.purp = ipurp
   return entry
 }
 
