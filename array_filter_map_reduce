@@ -7,6 +7,7 @@ array.push({"name": "E", "age": 25})
 array.push({"name": "F", "age": 50})
 
 console.log(array)
+console.log("\n")
 
 console.log(array.filter(function(person){
   return person.name == "A"
