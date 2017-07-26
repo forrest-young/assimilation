@@ -24,4 +24,4 @@ console.log(array.reduce(function(x, y){
     x = x.age
     y = y.age
   return x + y
-}), 0)
+}))
