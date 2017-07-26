@@ -23,5 +23,5 @@ console.log("Reduce:")
 console.log(array.reduce(function(x, y){
     console.log(x.age)
     console.log(y.age)
-  return x.age + y.age
+  return x[age] + y[age]
 }), 0)
