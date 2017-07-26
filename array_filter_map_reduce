@@ -21,6 +21,11 @@ console.log(array.map(function(person){
 
 console.log("Reduce:")
 console.log(array.reduce(function(x, y){
-  function sum(a, b){ return a.age + b.age }
+  function sum(a, b){
+  let c = a.age
+  let d = b.age
+  conosle.log(c)
+  console.log(d)
+  return c + d }
   return sum(x, y)
 }))
