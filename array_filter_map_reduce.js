@@ -21,5 +21,6 @@ console.log(array.map(function(person){
 
 console.log("Reduce:")
 console.log(array.reduce(function(x, y){
-  return x.age + y.age
+  if (x.age == undefined){ return x + y.age }
+  else return x.age + y.age
 }))
