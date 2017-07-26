@@ -18,6 +18,6 @@ var overTwenty = array.filter(function(person){
   return person.age > 20
 })
 console.log("Map:")
-console.log(map(overTwenty, function(person){
+console.log(array.map(overTwenty, function(person){
   return person.name
 }))
