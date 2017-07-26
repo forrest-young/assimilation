@@ -18,3 +18,8 @@ console.log("Map:")
 console.log(array.map(function(person){
   return person.name
 }))
+
+console.log("Reduce:")
+console.log(array.reduce(function(x, y){
+  return x + y
+}))
