@@ -117,3 +117,42 @@ console.log(centuries)
 centuries.forEach(function(century){
     console.log(average(century))
 })
+
+//Every and then some
+function every(array, condition){
+ let state = null
+ for (let i = 0; i < array.length; i++){
+  if (condition(array[i]) == false){
+   state = false
+   break
+  }else if (condition(array[i]) == true && i == array.length-1){
+   state = true
+   break
+  }
+ }
+ return state
+}
+
+function some(array, condition){
+ let state = null
+ for (let i = 0; i < array.length; i++){
+  if (condition(array[i]) == true){
+   state = true
+   break
+  }else if (condition(array[i]) == false && i == array.length-1){
+   state = false
+   break
+  }
+ }
+ return state
+}
+
+
+console.log(every([NaN, NaN, NaN], isNaN));
+// → true
+console.log(every([NaN, NaN, 4], isNaN));
+// → false
+console.log(some([NaN, 3, 4], isNaN));
+// → true
+console.log(some([2, 3, 4], isNaN));
+// → false
