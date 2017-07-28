@@ -75,3 +75,45 @@ ancestry.forEach(function(x){
 
 console.log(diffArray)
 console.log(average(diffArray))
+
+//Historical Life Expectancy
+var sixteenth = []
+var seventeenth = []
+var eighteenth = []
+var nineteenth = []
+var twentieth = []
+var twentyfirst = []
+var centuries = [
+  sixteenth,
+  seventeenth,
+  eighteenth,
+  nineteenth,
+  twentieth,
+  twentyfirst,
+]
+ancestry.forEach(function(person){
+  switch (Math.ceil(person.died/100)){
+    case 16:
+      sixteenth.push(person.died - person.born)
+      break
+    case 17:
+      seventeenth.push(person.died - person.born)
+      break
+    case 18:
+      eighteenth.push(person.died - person.born)
+      break
+    case 19:
+      nineteenth.push(person.died - person.born)
+      break
+    case 20:
+      twentieth.push(person.died - person.born)
+      break
+    case 21:
+      twentyfirst.push(person.died - person.born)
+      break
+  }
+})
+console.log(centuries)
+centuries.forEach(function(century){
+    console.log(average(century))
+})
