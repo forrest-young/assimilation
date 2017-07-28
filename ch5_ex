@@ -5,13 +5,6 @@ console.log(array.reduce(function(x, y){
   return x.concat(y)
 }))
 
-
-//forEach array function
-function forEach(array, action) {
-  for (var i = 0; i < array.length; i++)
-    action(array[i]);
-}
-
 //Ancestry array
 var ancestryJSON = JSON.stringify([
   {"name": "Carolus Haverbeke", "sex": "m", "born": 1832, "died": 1905, "father": "Carel Haverbeke", "mother": "Maria van Brussel"},
