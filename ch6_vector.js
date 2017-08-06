@@ -15,6 +15,7 @@ Vector.prototype.minus = function(v){
 
 Vector.prototype.length = function(){
   let l = Math.sqrt(this.x * this.x + this.y * this.y)
+  console.log(l)
   return l
 }
 
