@@ -15,10 +15,17 @@ Vector.prototype.minus = function(v){
 
 Vector.prototype.length = function(){
   let l = Math.sqrt(this.x * this.x + this.y * this.y)
-  console.log(l)
   return l
 }
 
-console.log(new Vector(1, 2).plus(new Vector(2, 3)));
-console.log(new Vector(1, 2).minus(new Vector(2, 3)));
-console.log(new Vector(3, 4).length);
+var firstVector = new Vector(1, 2)
+var secondVector = new Vector(2, 3)
+var thirdVector = new Vector(3, 4)
+var addVector = firstVector.plus(secondVector)
+var minusVector = firstVector.minus(secondVector)
+
+console.log(firstVector)
+console.log(secondVector)
+console.log(addVector)
+console.log(minusVector)
+console.log(thirdVector.length)
