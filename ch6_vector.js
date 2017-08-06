@@ -4,11 +4,11 @@ function Vector(x, y){
 }
 
 Vector.prototype.plus = function(v){
-  return new Vector(this.x += v.x, this.y += v.y)
+  return new Vector(this.x + v.x, this.y + v.y)
 }
 
 Vector.prototype.minus = function(v){
-  return new Vector(this.x -= v.x, this.y -= v.y)
+  return new Vector(this.x - v.x, this.y - v.y)
 }
 
 Object.defineProperty(Vector.prototype, "length", {
@@ -25,4 +25,5 @@ console.log(firstVector)
 console.log(secondVector)
 console.log(addVector)
 console.log(minusVector)
+console.log(thirdVector)
 console.log(thirdVector.length)
