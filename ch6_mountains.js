@@ -28,6 +28,7 @@ function colWidths(rows) {
 
 function drawTable(rows) {
   var heights = rowHeights(rows);
+  console.log("Height: " + heights)
   var widths = colWidths(rows);
 
   function drawLine(blocks, lineNo) {
