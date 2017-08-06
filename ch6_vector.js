@@ -14,7 +14,8 @@ Vector.prototype.minus = function(v){
 }
 
 Vector.prototype.length = function(){
-  return Math.sqrt(this.x * this.x + this.y * this.y)
+  let l = Math.sqrt(this.x * this.x + this.y * this.y)
+  return l
 }
 
 console.log(new Vector(1, 2).plus(new Vector(2, 3)));
