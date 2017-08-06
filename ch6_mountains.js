@@ -30,6 +30,7 @@ function drawTable(rows) {
   var heights = rowHeights(rows);
   console.log("Height: " + heights)
   var widths = colWidths(rows);
+  console.log("Width: " + widths)
 
   function drawLine(blocks, lineNo) {
     return blocks.map(function(block) {
