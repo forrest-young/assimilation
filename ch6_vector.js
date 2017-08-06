@@ -6,17 +6,18 @@ function Vector(x, y){
 Vector.prototype.plus = function(v){
   this.x += v.x
   this.y += v.y
+  return this
 }
 
 Vector.prototype.minus = function(v){
   this.x -= v.x
   this.y -= v.y
+  return this
 }
 
-Vector.prototype.length = function(){
-  let l = Math.sqrt(this.x * this.x + this.y * this.y)
-  return l
-}
+Object.defineProperty(Vector.prototype, "length", {
+  get: function() { return Math.sqrt(this.x * this.x + this.y * this.y) }
+})
 
 var firstVector = new Vector(1, 2)
 var secondVector = new Vector(2, 3)
