@@ -4,15 +4,11 @@ function Vector(x, y){
 }
 
 Vector.prototype.plus = function(v){
-  this.x += v.x
-  this.y += v.y
-  return this
+  return new Vector(this.x += v.x, this.y += v.y)
 }
 
 Vector.prototype.minus = function(v){
-  this.x -= v.x
-  this.y -= v.y
-  return this
+  return new Vector(this.x -= v.x, this.y -= v.y)
 }
 
 Object.defineProperty(Vector.prototype, "length", {
