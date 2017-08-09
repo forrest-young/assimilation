@@ -14,7 +14,7 @@ function StretchCell(inner, width, height){
   this.width = inner.text.reduce(function(x, y){
     if (x.length == undefined){
       if (y.length > width){
-        return y.length
+        return y.text.length
       }
     }else{
       return width
