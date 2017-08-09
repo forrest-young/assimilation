@@ -28,7 +28,7 @@ StretchCell.prototype.draw = function(){
   var result = []
   for (var i = 0; i < this.height; i++) {
     var line = this.inner[i] || ""
-    result.push(line + repeat(" ", this.width - line.length));
+    result.push(line + repeat(" ", this.width));
   }
   return result
 }
