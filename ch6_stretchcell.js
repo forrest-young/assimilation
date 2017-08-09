@@ -11,7 +11,7 @@ function repeat(string, times) {
 
 function StretchCell(inner, width, height){
   this.inner = inner
-  this.width = Math.max(inner.length, width)
+  this.width = Math.max(inner.text.length, width)
   console.log(inner.length)
   console.log(width)
   if (height < 1){
