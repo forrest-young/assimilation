@@ -11,15 +11,13 @@ function repeat(string, times) {
 
 function StretchCell(inner, width, height){
   this.inner = inner.text
-  this.width = inner.text.reduce(function(x, y){
-    if (x.length == undefined){
-      if (y.length > width){
-        return y.text.length
-      }
-    }else{
-      return width
-    }
-  })
+
+  if (inner.text.length > width){
+    this.width = inner.text.length
+  }else{
+    this.width = width
+  }
+
   if (height < 1){
     this.height = 1
   }else{
