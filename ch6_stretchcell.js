@@ -10,6 +10,7 @@ function repeat(string, times) {
 }
 
 function StretchCell(inner, width, height){
+  console.log(inner.text.length)
   this.inner = inner.text
   this.width = Math.max(inner.text.length, width)
   if (height < 1){
@@ -28,7 +29,7 @@ StretchCell.prototype.draw = function(){
   var result = []
   for (var i = 0; i < this.height; i++) {
     var line = this.inner[i] || ""
-    result.push(line + repeat(" ", this.width));
+    result.push(line + repeat(" ", this.width - line.length));
   }
   return result
 }
