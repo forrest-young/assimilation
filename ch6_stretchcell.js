@@ -11,8 +11,14 @@ function repeat(string, times) {
 
 function StretchCell(inner, width, height){
   this.inner = inner.text
-  this.width = inner.text.reduce(function(_, y){
-    return Math.max(width, y.length)
+  this.width = inner.text.reduce(function(x, y){
+    if (x.length == undefined){
+      if (y.length > width){
+        return y.length
+      }
+    }else{
+      return width
+    }
   })
   if (height < 1){
     this.height = 1
