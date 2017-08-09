@@ -13,7 +13,7 @@ function StretchCell(inner, width, height){
   console.log(inner.text)
   console.log(inner.text.length)
   this.inner = inner.text
-  this.width = Math.max(inner.text.length, width)
+  this.width = Math.max(inner[0].text.length, width)
   if (height < 1){
     this.height = 1
   }else{
