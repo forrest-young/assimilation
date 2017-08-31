@@ -1,3 +1,4 @@
+var fs = require("fs")
 var data = fs.readFileSync('IPM.txt')
 
 var impFile = data.toString()
