@@ -2,6 +2,6 @@ var ipmFile = "Allen,Jack,A,Jr,-,Rensselaer,IN,47978,2017;Atkinson,David and Ann
 
 console.log(ipmFile)
 
-var entries[] = ipmFile.split(";")
+var entries = ipmFile.split(";")
 
 console.log(entries)
