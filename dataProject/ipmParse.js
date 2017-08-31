@@ -3,7 +3,7 @@ var ipmFile = "Allen,Jack,A,Jr,-,Rensselaer,IN,47978,2017;Atkinson,David and Ann
 var entries = ipmFile.split(";")
 var parsedEntries = []
 function ParsedEntry(entry){
-  entry.split(",")
+  entry = entry.split(",")
   this.last = entry[0]
   this.first = entry[1]
   this.middle = entry[2]
