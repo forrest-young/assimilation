@@ -1,7 +1,7 @@
 var fs = require("fs")
 var data = fs.readFileSync('IPM.txt')
 
-var impFile = data.toString()
+var ipmFile = data.toString()
 
 var entries = ipmFile.split(";")
 var parsedEntries = []
