@@ -3,5 +3,11 @@ var ipmFile = "Allen,Jack,A,Jr,-,Rensselaer,IN,47978,2017;Atkinson,David and Ann
 console.log(ipmFile)
 
 var entries = ipmFile.split(";")
-
-console.log(entries)
+console.log("Last Name, First Name, Middle Name, Suffix, Address, City, State, Zip Code, Reunions Attended")
+for(let i = 0;i < entries.length;i++){
+  let entry = entries[i].split(",")
+  for(let j = 0;j < entry.length;j++){
+    console.log(entry[i])
+  }
+  console.log("===========================")
+}
